@@ -1,0 +1,267 @@
+html,body{
+	height: 100%;
+	width: 100%;
+	font-family: 'georgia';
+	color: ;
+	padding: 0;
+	margin: 0;
+}
+
+/*COLORS*/
+.brown{
+	color: #766200;
+}
+
+.light-brown-head{
+	color: #a79a5c;
+}
+
+.x-light-brown{
+	color: #c3b989;
+}
+
+.greyblue{
+	color: #9eaba9;
+}
+
+.darkgreyblue{
+	color: #8c9b99;
+}
+
+
+/*FONTS*/
+.caviar-heading{
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+.nice-serif{
+	font-family: 'Arapey', serif;
+	font-size: 14pt;
+	line-height: 1.5em;
+}
+
+p{
+	font-style: italic;
+}
+
+body{
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.clear{clear:both;}
+
+.outter-container{
+	min-height: 75%;
+	border: #faf2dc 10px solid;
+	background: url(../img/linen-bg.jpg);
+	position: relative;
+}
+
+.container{
+	min-width: 1050px;
+	margin: 0 auto;
+}
+
+/*HOME*/
+
+.home-container{
+	padding-top: 10%;
+}
+
+.home-logo-container{
+	clear: both;
+	width: 70%;
+	margin-left: 15%;
+}
+
+p.home-p{
+	margin-top: 50px;
+	width: 65%;
+	padding-left: 78px;
+}
+
+ul.home-nav{
+	margin: 0 23% 0 0;
+	padding: 0;
+	float: right;
+}
+	.home-nav li{
+		padding: 5px 0;
+	}
+	.home-nav li a,.nav li a{
+		text-decoration: none;
+	}
+	li.philo{
+		list-style-image: url(../img/yellow-dot.png);
+	}
+	li.causes{
+		list-style-image: url(../img/blue-dot.png);
+	}	
+	li.family{
+		list-style-image: url(../img/orange-dot.png);
+	}	
+	li.news{
+		list-style-image: url(../img/green-dot.png);
+	}	
+	li.connect{
+		list-style-image: url(../img/red-dot.png);
+	}	
+
+
+/* INNER */
+div.inner-header{
+	margin: 0 auto;
+	padding-top: 20px;
+}
+	div.inner-header .logo{
+		width: 139px;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+div.divider{
+	background: url(../img/divider.png) repeat-x center center;
+	height: 21px;
+	width: 220px;
+	float: left;
+}
+	div.divider.first{
+		margin-right: 35.5px;
+	}
+.nav-wrapper{
+	width: 1050px;
+	margin: 0 auto;
+}
+.nav{
+	margin: 0 auto;
+	padding: 0;
+	width: 539px;
+	float: left;
+	margin-right: 35.5px;
+}
+.nav li{
+	float: left;
+	list-style-position: inside;
+	margin-right: 11px;
+}
+	.nav li:last-child{
+		margin-right: 0px !important;
+	}
+
+.nav li.philo{
+	width: 130px;
+}
+.nav li.causes{
+	width: 99px;
+}
+.nav li.family{
+	width: 100px;
+}
+.nav li.news{
+	width: 90px;
+}
+
+#philo-carou-outter,#core-princip-carou-outter{
+	width: 532px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 105px;
+}
+
+#philo-carou-outter .slide h1, #core-princip-carou-outter .slide h1{
+	margin-bottom: 48px;
+}
+
+.carou-controls {
+	width: 154px;
+	margin: 48px auto 0 auto;
+	clear: both;
+}
+
+.carou-controls ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+	.carou-controls ul li{
+		float: left;
+		display: block;
+		width: 26px;
+		height: 56px;
+		margin-right: 6px;
+	}
+		.carou-controls ul li:last-child{
+			margin-right: 0px;
+		}
+			.carou-controls ul li.selected{
+				background: url(../img/dot-selected-caret.png) no-repeat center 47px;
+			}
+
+		.carou-controls ul li a{
+			display: block;
+			width: inherit;
+			height: inherit;
+			text-decoration: none;
+		}
+
+			.carou-controls ul li a.red{
+				background: url(../img/big-red-dot.png) no-repeat center center;
+			}
+			.carou-controls ul li a.blue{
+				background: url(../img/big-blue-dot.png) no-repeat center center;
+			}	
+			.carou-controls ul li a.brown{
+				background: url(../img/big-brown-dot.png) no-repeat center center;
+			}
+			.carou-controls ul li a.orange{
+				background: url(../img/big-orange-dot.png) no-repeat center center;
+			}
+			.carou-controls ul li a.yellow{
+				background: url(../img/big-yellow-dot.png) no-repeat center center;
+			}
+
+.philo-toggle{
+	display: block;
+	padding: 5px 0;
+	text-align: center;
+	text-decoration: none;
+	font-style: italic;
+}			
+
+
+/* CAUSES*/
+
+.causes-container{
+	width: 800px;
+	margin: 69px auto 0 auto;
+	max-height: 565px;
+	overflow: scroll;
+}
+	.cause-container{margin-bottom: 28px;position: relative;}
+	.cause-container .artwork{
+		width: 361px;
+		height: 149px;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		display: table-cell;
+	}
+
+	.cause-container .descriptor{
+		display: table-cell;
+		vertical-align: bottom;
+		padding-left: 20px;
+	}
+
+	.cause-container .descriptor p,.cause-container .descriptor h2{
+		padding: 0;
+		margin: 0;
+	}
+
+	.cause-container a{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}

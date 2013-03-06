@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vukets | Michael &amp; Karen Vukets family foundation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arapey:400italic' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+  	<div class="outter-container">
+	    <div class="container">
+
+	    	<div class="inner-header">
+	    		<div class="logo"><a href="index.html"><img src="img/inner-logo.png" alt="" /></a></div>
+		    	<div class="nav-wrapper">
+		    		<div class="divider first"></div>
+		    		<ul class="nav span8">
+		    			<li class="philo"><a class="greyblue" href="philosophy.html">Our Philosophy</a></li>
+		    			<li class="causes"><a class="greyblue" href="causes.html">Our Causes</a></li>
+		    			<li class="family"><a class="greyblue" href="#">Our Family</a></li>
+		    			<li class="news"><a class="greyblue" href="#">Our News</a></li>
+		    			<li class="connect"><a class="greyblue" href="#">Connect</a></li>
+		    		</ul>
+		    		<div class="divider"></div>
+		    	</div>	    		
+	    	</div>
+
+	    	<div class="causes-container">
+	    		<div class="cause-container">
+	    			<a href="#"></a>
+	    			<div class="artwork" style="background-image: url(img/placeholder-artwork.jpg);"></div>
+	    			<div class="descriptor">
+	    				<h2 class="caviar-heading light-brown-head">The Arts</h2>
+	    				<p class="x-light-brown nice-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+	    			</div>
+	    		</div>
+	    		<div class="cause-container">
+	    			<a href="#"></a>
+	    			<div class="artwork" style="background-image: url(img/placeholder-artwork.jpg);"></div>
+	    			<div class="descriptor">
+	    				<h2 class="caviar-heading light-brown-head">The Arts</h2>
+	    				<p class="x-light-brown nice-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+	    			</div>
+	    		</div>
+	    		<div class="cause-container">
+	    			<a href="#"></a>
+	    			<div class="artwork" style="background-image: url(img/placeholder-artwork.jpg);"></div>
+	    			<div class="descriptor">
+	    				<h2 class="caviar-heading light-brown-head">The Arts</h2>
+	    				<p class="x-light-brown nice-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+	    			</div>
+	    		</div>
+	    		<div class="cause-container">
+	    			<a href="#"></a>
+	    			<div class="artwork" style="background-image: url(img/placeholder-artwork.jpg);"></div>
+	    			<div class="descriptor">
+	    				<h2 class="caviar-heading light-brown-head">The Arts</h2>
+	    				<p class="x-light-brown nice-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+	    			</div>
+	    		</div>	    			    			    		
+	    	</div>
+
+	    </div> <!-- /container -->
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/swipe.min.js"></script>
+
+    <script type="text/javascript">
+    	$(document).ready(function(){
+
+
+    		$('a.philo-toggle').click(function(e){
+    			
+    			e.preventDefault();
+
+    			if($('#philo-carou-outter').is(':visible')){
+	    			$('#philo-carou-outter').fadeOut(100, function(){
+	    				$('#core-princip-carou-outter').fadeIn();
+	    			});
+	    			$(this).removeClass('greyblue').addClass('x-light-brown');
+    			} else {
+    				$(this).removeClass('x-light-brown').addClass('greyblue');
+
+					$('#core-princip-carou-outter').fadeOut(100, function(){
+						$('#philo-carou-outter').fadeIn();
+					});
+    			}
+    		});
+    		
+    		var philoSwipe 	= new Swipe(document.getElementById('philo-carou-outter'));
+    		var coreSwipe 	= new Swipe(document.getElementById('core-princip-carou-outter'));
+
+    		$('#core-princip-carou-outter').hide();
+
+    		$('.carou-controls li a').click(function(e){
+    			e.preventDefault();
+
+    			$(this).parent().parent().find('li').removeClass('selected');
+    			$(this).parent().addClass('selected');
+
+    			if($('#philo-carou-outter').is(":visible")){
+    				console.log('here');
+    				philoSwipe.slide($('.carou-controls li.selected').index(), 400);
+    			} else {
+    				console.log($('.carou-controls li.selected').index());
+    				coreSwipe.slide($('.carou-controls li.selected').index(), 400);
+    			}
+
+    		});
+    	});
+    </script>
+
+
+  </body>
+</html>
